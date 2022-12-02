@@ -1,0 +1,6 @@
+nvidia-settings --assign CurrentMetaMode="HDMI-0: nvidia-auto-select +0+0 {ForceCompositionPipeline=On}, DVI-D-0: nvidia-auto-select +1366+0 {ForceCompositionPipeline=On}, DP-1: nvidia-auto-select +3286+0 {ForceCompositionPipeline=On}"
+
+nvidia-settings --assign CurrentMetaMode="HDMI-0: nvidia-auto-select +0+0 {ForceFullCompositionPipeline=On}, DVI-D-0: nvidia-auto-select +1366+0 {ForceFullCompositionPipeline=On}, DP-1: nvidia-auto-select +3286+0 {ForceFullCompositionPipeline=On}"
+
+# AutoLoad:
+terminator -e "bash -c '/home/nathandrake/.configuracoes/Scripts/nvidia;$SHELL' "
